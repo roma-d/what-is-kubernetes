@@ -43,7 +43,7 @@ In addition, Kubernetes contains a number of higher-level abstractions called Co
 
 - [**ReplicaSet**](#replicaset)
 - [**Deployment**](#deployment)
-- [**StatefulSet**](#statefulset)
+- [**StatefulSet**](#statefulsets)
 - [**DaemonSet**](#daemonset)
 - [**Job**](#job)
 
