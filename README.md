@@ -34,18 +34,18 @@ Once you’ve set your desired state, the Kubernetes Control Plane works to make
 
 The basic Kubernetes objects include:
 - [**Node**](#node)
-- **Pod**
-- **Service**
-- **Volume**
-- **Namespace**
+- [**Pod**](#pod)
+- [**Service**](#service)
+- [**Volume**](#volume)
+- [**Namespace**](#namespaces)
 
 In addition, Kubernetes contains a number of higher-level abstractions called Controllers. Controllers build upon the basic objects, and provide additional functionality and convenience features. They include:
 
-- **ReplicaSet**
-- **Deployment**
-- **StatefulSet**
-- **DaemonSet**
-- **Job**
+- [**ReplicaSet**](#replicaset)
+- [**Deployment**](#deployment)
+- [**StatefulSet**](#statefulset)
+- [**DaemonSet**](#daemonset)
+- [**Job**](#job)
 
 Let's describe those one by one, after that we'll try them with some hands-on exercises.
 
@@ -206,12 +206,12 @@ With this, you've covered most of the Kubernetes objects presented above. You ca
 
 Let's recap what you've done in the above hands-on exercises. You've created most of the Kubernetes objects we described:
 - you started with a kubernetes cluster in Rancher;
-- you then browsed cluster `Nodes`;
+- you then browsed cluster [`Nodes`](#node);
 - then you created a `Workload`;
-- then you've seen that a `Workload` actually created 3 separate Kubernetes objects: a `Deployment` that manages a `ReplicaSet`, that in turn, keeps the desired number of `Pods` running;
-- after that you scaled your `Deployment` and observed how that in turn changed the `ReplicaSet` and consequently scaled the number of `Pods`;
-- and lastly you created a `Service` of type `Load Balancer`, that is balancing client's requests between the `Pods`.
+- then you've seen that a `Workload` actually created 3 separate Kubernetes objects: a [`Deployment`](#deployment) that manages a [`ReplicaSet`](#replicaset), that in turn, keeps the desired number of [`Pods`](#pod) running;
+- after that you scaled your [`Deployment`](#deployment) and observed how that in turn changed the `ReplicaSet` and consequently scaled the number of [`Pods`](#pod);
+- and lastly you created a [`Service`](#service) of type `Load Balancer`, that is balancing client's requests between the [`Pods`](#pod).
 
-And all that was easily done via **Rancher**, with point-and-click actions, without the need to install any software locally, to copy authentication configurations or to run command lines in a terminal, all that was needed - a browser. And that's just the surface of Rancher. Pretty convenient I'd say.
+And all that was easily done via [**Rancher**](https://rancher.com/), with point-and-click actions, without the need to install any software locally, to copy authentication configurations or to run command lines in a terminal, all that was needed - a browser. And that's just the surface of Rancher. Pretty convenient I'd say.
 
 If you reached this point, I want to thank you for your time and hopefully your journey to Kubernetes world will be easier now with Rancher.
